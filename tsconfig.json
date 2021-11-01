@@ -1,0 +1,28 @@
+{ 
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+  "module": "commonjs",
+  "target": "es2018",
+  "noImplicitAny": false, // we want this to be true
+  "allowSyntheticDefaultImports": true, // we want this to be false
+  "moduleResolution": "node",
+  "resolveJsonModule": true,
+  "sourceMap": true,
+  "incremental": true,
+  "outDir": "dist",
+  "baseUrl": ".",
+  "jsx": "react",
+  "paths": {
+    "*": [
+      "node_modules/*"
+    ]
+  },
+  "lib": [
+    "es2018"
+  ]
+},
+"include": [
+  "**/*.ts"
+]
+}

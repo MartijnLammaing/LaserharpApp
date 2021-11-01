@@ -1,0 +1,56 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "nodeInstall": "npx rn-nodeify --install 'fs,util,stream,events,os' --hack"
+  },
+  "dependencies": {
+    "@types/node": "^16.11.6",
+    "expo": "~43.0.0",
+    "expo-status-bar": "~1.1.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.2",
+    "react-native-web": "0.17.1",
+    "serialport": "^9.2.5",
+    "timbre": "^14.11.25",
+    "react-native-level-fs": "^3.0.0",
+    "util": "~0.10.3",
+    "stream-browserify": "^1.0.0",
+    "events": "^1.0.0",
+    "readable-stream": "1.0.33",
+    "react-native-os": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.64.12",
+    "rn-nodeify": "^10.3.0",
+    "typescript": "^4.3.5"
+  },
+  "private": true,
+  "react-native": {
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "os": "react-native-os"
+  },
+  "browser": {
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "os": "react-native-os"
+  }
+}
