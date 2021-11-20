@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "test": "test",
-    "start": "npm run build && node ./dist/index.js",
+    "start": "npm install && npm run build && node ./dist/index.js",
     "start:watch": "nodemon",
     "build": "mkdir -p dist && tsc"
   },
